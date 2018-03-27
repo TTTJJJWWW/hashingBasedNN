@@ -13,7 +13,9 @@ This project provides the coresponding code to the paper "Resisting Adversarial 
 ## Usage && Files Descriptions
 In root direcotory:
 * generate adversarial examples:
+
 $\quad$ gen-adv-smps.ipynb
+
 * construct DNN graphs
 $\quad$ graphs.py
 * Multi-index hashing based DNNs
