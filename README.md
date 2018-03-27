@@ -11,7 +11,7 @@ This project provides the coresponding code to the paper "Resisting Adversarial 
 * Jupyter notebook
 
 ## Usage && Files Descriptions
-In root direcotory:
+In root direcotory, we do joyful examples on synthesis dataset:
 
 * generate adversarial examples:  
   gen-adv-smps.ipynb
@@ -31,7 +31,7 @@ In root direcotory:
 We recommend to run `gen-adv-smps.ipynb` first to obain adversarial examples, and then perform any one of `InH.ipynb`, `LFH.ipynb`, `JID.ipynb` and `JFD.ipynb`
 
 In **drebin** directory:
-There are source codes for a series expriments on drebin. We need apply the **DREBIN** dataset at here: [drebin]:https://www.sec.cs.tu-bs.de/~danarp/drebin/. 
+There are source codes for a series expriments on drebin. We need apply the **DREBIN** dataset at here: [drebin](https://www.sec.cs.tu-bs.de/~danarp/drebin/). 
 
 In **pdfrate** directory:
 We provide the robust support vector machine method.
