@@ -305,7 +305,6 @@ class FFN_model(object):
             grads[pos_invalid] = np.min(grads)
             grads = np.clip(grads, a_min = 0., a_max = 12345.)
             pos_perturbed = np.argpartition(grads, np.argmin(grads, axis = 0))[:,-modified_num:]
-            pos_perturbed = grads.argsort()[:, -modified_num:]
             for i, mal in enumerate(mal_samples):
                 mal[pos_perturbed[i]] = 1.
                    
