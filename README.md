@@ -13,13 +13,11 @@ This project provides the coresponding code to the paper "Resisting Adversarial 
 ## Usage && Files Descriptions
 In root direcotory:
 * generate adversarial examples:
-
-$\quad$ gen-adv-smps.ipynb
-
+  gen-adv-smps.ipynb
 * construct DNN graphs
-$\quad$ graphs.py
+  graphs.py
 * Multi-index hashing based DNNs
-$\quad$ InH.ipynb
+  InH.ipynb
 * Local forest hashing based DNNs
 $\quad$ LFH.ipynb
 * Joint index hashing and Denoising auto-encoder
