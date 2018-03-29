@@ -303,7 +303,6 @@ class FFN_model(object):
             grads = sess.run(self.grad, feed_dict = feed_dict)
             pos_invalid = (mal_samples == 1.)
             grads[pos_invalid] = np.min(grads)
-            grads = np.clip(grads, a_min = 0., a_max = 12345.)
             pos_perturbed = np.argpartition(grads, np.argmin(grads, axis = 0))[:,-modified_num:]
             for i, mal in enumerate(mal_samples):
                 mal[pos_perturbed[i]] = 1.
@@ -372,7 +371,6 @@ class FFN_lh_model(object):
             grads = sess.run(self.grad, feed_dict = feed_dict)
             pos_invalid = (mal_samples == 1.)
             grads[pos_invalid] = np.min(grads)
-            grads = np.clip(grads, a_min = 0., a_max = 12345.)
             pos_perturbed = np.argpartition(grads, np.argmin(grads, axis = 0))[:,-modified_num:]
             for i, mal in enumerate(mal_samples):
                 mal[pos_perturbed[i]] = 1.
